@@ -36,13 +36,9 @@
 
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
+  <link href="fonts/css/all.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: eBusiness
-    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -80,7 +76,7 @@
 									</button>
                 <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                  <div class="row"><div class="col-md-4"><img src="img/main.jpg"  width="100px"></div><div class="col-md-6"><h4 style="color:white;">Top Notch Assignments</h4></div></div>
+                  <div class="row"><div class="col-md-5"><img src="img/main.jpg"  width="100px"></div><div class="col-md-4"><h5 style="color:white;">Top Notch Assignments</h5></div></div>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
 								</a>
@@ -113,6 +109,9 @@
       </div>
     </div>
     <!-- header-area end -->
+
+
+
   </header>
   <!-- header end -->
 
@@ -125,16 +124,16 @@
     <div class="footer-area" style="background-color:black; color:white">
       <div class="container" style="color:white">
         <div class="row">
-          <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
                   <h4 style="color:#44B78B">Top Notch Assignments</h4>
-                  <ul><li>Home</li>
-                    <lt>How It Works</lt>
-                    <li> Services</li>
-                    <li>Contact</li>
-                    <li> About </li></ul>
+                  <ul><li><a href="/" style="color:white">Home</a></li>
+                    <lt><a href="/how" style="color:white">How It Works</a></lt>
+                    <li><a href="/services" style="color:white"> Services</a></li>
+                    <li><a href="/contact" style="color:white">Contact</a></li>
+                    <li><a href="/about" style="color:white"> About</a> </li></ul>
                 </div>
 
 
@@ -142,22 +141,7 @@
               
 
                
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -166,7 +150,7 @@
 
 
 
-                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
@@ -191,21 +175,34 @@
 
 
 
-    
-          <!-- end single footer -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
-               
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                  <p><span>Working Hours:</span> 9am-5pm</p>
+                <div class="footer-logo">
+                    <h4 style="color:#44B78B">Reach Us</h4>
+                  <ul><li><i class="fab fa-facebook-messenger fa-2x"></i> <a href="https://www.facebook.com/topnotchassignments" style="color:white">https://www.facebook.com/topnotchassignments</a></li>
+                    <lt> <i class="fab fa-whatsapp fa-2x"></i> 01315-092766</i></lt>
+                    <li> <i class="fas fa-envelope fa-2x"></i> topnotchassignments@gmail.com </li>
+                    <li><i class="fas fa-phone fa-2x"> </i> 01315-092766</li>
+                    </ul>
                 </div>
+
+
+
+
+              
+
+               
+               
               </div>
             </div>
           </div>
 
+
+
+
+    
+       
 
            
           <!-- end single footer -->
@@ -219,31 +216,10 @@
         </div>
       </div>
     </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-              </p>
-            </div>
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-              -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
   </footer>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+ 
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -261,7 +237,7 @@
 $({ Counter: 0 }).animate({
   Counter: $('.1').text()
 }, {
-  duration: 2000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.1').text(Math.ceil(this.Counter));
@@ -273,7 +249,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.2').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.2').text(Math.ceil(this.Counter));
@@ -283,7 +259,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.3').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.3').text(Math.ceil(this.Counter));
@@ -293,7 +269,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.4').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.4').text(Math.ceil(this.Counter));
@@ -303,7 +279,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.5').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.5').text(Math.ceil(this.Counter));
@@ -313,7 +289,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.6').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.6').text(Math.ceil(this.Counter));
@@ -323,7 +299,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.7').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.7').text(Math.ceil(this.Counter));
@@ -333,7 +309,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.8').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.8').text(Math.ceil(this.Counter));
@@ -343,7 +319,7 @@ $({ Counter: 0 }).animate({
 $({ Counter: 0 }).animate({
   Counter: $('.9').text()
 }, {
-  duration: 1000,
+  duration: 3000,
   easing: 'swing',
   step: function() {
     $('.9').text(Math.ceil(this.Counter));
@@ -398,17 +374,13 @@ $({ Counter: 0 }).animate({
 
 
 
-
-<!-- 
+<!-- whatsapp -->
 <script type="text/javascript">
     (function () {
         var options = {
-            facebook: "101485288179531", // Facebook page ID
-            whatsapp: "+8801751634503", // WhatsApp number
+            whatsapp: "+8801315092766", // WhatsApp number
             call_to_action: "Message us", // Call to action
-            button_color: "#FF6550", // Color of button
             position: "right", // Position may be 'right' or 'left'
-            order: "facebook,whatsapp", // Order of buttons
         };
         var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -416,8 +388,12 @@ $({ Counter: 0 }).animate({
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+<!-- /whatspp -->
 
- -->
+
+
+
+ <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 </body>
 
 </html>

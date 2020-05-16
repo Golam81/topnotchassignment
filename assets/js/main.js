@@ -37,12 +37,7 @@
   /*----------------------------
    wow js active
   ------------------------------ */
-  new WOW().init();
-
-  $(".navbar-collapse a:not(.dropdown-toggle)").on('click', function() {
-    $(".navbar-collapse.collapse").removeClass('in');
-  });
-
+ 
   //---------------------------------------------
   //Nivo slider
   //---------------------------------------------
@@ -54,7 +49,7 @@
     animSpeed: 500,
     pauseTime: 5000,
     startSlide: 0,
-    directionNav: true,
+    directionNav: false,
     controlNavThumbs: false,
     pauseOnHover: true,
     manualAdvance: false,
@@ -78,14 +73,6 @@
   /*----------------------------
   Page Scroll
   ------------------------------ */
-  var page_scroll = $('a.page-scroll');
-  page_scroll.on('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top - 55
-    }, 1500, 'easeInOutExpo');
-    event.preventDefault();
-  });
 
   /*--------------------------
     Back to top button
